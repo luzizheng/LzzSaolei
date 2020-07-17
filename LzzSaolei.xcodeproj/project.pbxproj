@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		374E35BC24BEC82D00C67531 /* UIView+ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 374E35BB24BEC82D00C67531 /* UIView+ext.m */; };
+		374E35C024BEF5E200C67531 /* SLControlToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 374E35BF24BEF5E200C67531 /* SLControlToolView.m */; };
+		375C233124BD9D5A00F8CC9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 375C233024BD9D5A00F8CC9F /* AppDelegate.m */; };
+		375C233C24BD9D5C00F8CC9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375C233B24BD9D5C00F8CC9F /* Assets.xcassets */; };
+		375C233F24BD9D5C00F8CC9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375C233D24BD9D5C00F8CC9F /* LaunchScreen.storyboard */; };
+		375C234224BD9D5C00F8CC9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 375C234124BD9D5C00F8CC9F /* main.m */; };
+		375C234A24BD9E5100F8CC9F /* SLGamingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 375C234924BD9E5100F8CC9F /* SLGamingVC.m */; };
+		375C234F24BDC11C00F8CC9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375C234E24BDC11C00F8CC9F /* Main.storyboard */; };
+		375C235224BDC31A00F8CC9F /* SLGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 375C235124BDC31A00F8CC9F /* SLGridView.m */; };
+		375C235524BEAED300F8CC9F /* SLGridMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 375C235424BEAED300F8CC9F /* SLGridMap.m */; };
+		375C235924BEB40200F8CC9F /* SLHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 375C235824BEB40200F8CC9F /* SLHeadView.m */; };
+		375C236424BEC0C600F8CC9F /* CHEMMFontImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 375C235C24BEC0C600F8CC9F /* CHEMMFontImage.m */; };
+		375C236524BEC0C600F8CC9F /* CHEMMIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 375C235E24BEC0C600F8CC9F /* CHEMMIconFont.m */; };
+		375C236624BEC0C600F8CC9F /* CHEMMIconInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 375C235F24BEC0C600F8CC9F /* CHEMMIconInfo.m */; };
+		375C236724BEC0C600F8CC9F /* UIImage+CHEMMIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 375C236024BEC0C600F8CC9F /* UIImage+CHEMMIconFont.m */; };
+		375C236D24BEC1C300F8CC9F /* carchatting.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 375C236A24BEC12300F8CC9F /* carchatting.ttf */; };
+		375C236E24BEC1C300F8CC9F /* fonteditor.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 375C236824BEC12300F8CC9F /* fonteditor.ttf */; };
+		375C236F24BEC1C300F8CC9F /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 375C236B24BEC12400F8CC9F /* iconfont.ttf */; };
+		375C237024BEC1C300F8CC9F /* lightconfig.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 375C236924BEC12300F8CC9F /* lightconfig.ttf */; };
+		375C237624BEC4AD00F8CC9F /* SLGameConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 375C237524BEC4AD00F8CC9F /* SLGameConfig.m */; };
+		3780E12924BF2B5600922F40 /* audio_robot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3780E12824BF2B5600922F40 /* audio_robot.mp3 */; };
+		3780E12C24BF2B8700922F40 /* SLAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3780E12B24BF2B8700922F40 /* SLAudioTool.m */; };
+		3780E12F24BF2D3C00922F40 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3780E12E24BF2D3C00922F40 /* AVFoundation.framework */; };
+		3780E13524BF2EDA00922F40 /* audio_break.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3780E13424BF2EDA00922F40 /* audio_break.mp3 */; };
+		3780E13724BF309200922F40 /* audio_boom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3780E13624BF309200922F40 /* audio_boom.mp3 */; };
+		3780E14624C041F700922F40 /* bgm_01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3780E14524C041F700922F40 /* bgm_01.mp3 */; };
+		3780E14924C0421A00922F40 /* bgm_02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3780E14724C0421A00922F40 /* bgm_02.mp3 */; };
+		3780E14A24C0421A00922F40 /* bgm_03.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3780E14824C0421A00922F40 /* bgm_03.mp3 */; };
+		3780E14E24C0656A00922F40 /* SLGameRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3780E14D24C0656A00922F40 /* SLGameRecordView.m */; };
+		3780E15324C06FA600922F40 /* SLRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 3780E15224C06FA600922F40 /* SLRecord.m */; };
+		3780E15724C07CC100922F40 /* SLAlertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3780E15624C07CC100922F40 /* SLAlertTool.m */; };
+		379A15AB24C15F2900913BAD /* audio_flag.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 379A15AA24C15F2900913BAD /* audio_flag.mp3 */; };
+		379A15AD24C161C400913BAD /* audio_breakGrid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 379A15AC24C161C400913BAD /* audio_breakGrid.mp3 */; };
+		379A15AF24C163AA00913BAD /* audio_breakAround.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 379A15AE24C163AA00913BAD /* audio_breakAround.mp3 */; };
+		379A15B624C1904200913BAD /* SLIndexVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 379A15B524C1904200913BAD /* SLIndexVC.m */; };
+		379A15B824C19F0F00913BAD /* audio_cell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 379A15B724C19F0F00913BAD /* audio_cell.mp3 */; };
+		F2EA61E98CFD9D67C67EC39A /* Pods_LzzSaolei.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C4731D460F30596012EA05 /* Pods_LzzSaolei.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2AF94C2A58DCCCCADE2A9E85 /* Pods-LzzSaolei.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LzzSaolei.release.xcconfig"; path = "Target Support Files/Pods-LzzSaolei/Pods-LzzSaolei.release.xcconfig"; sourceTree = "<group>"; };
+		374E35BA24BEC82D00C67531 /* UIView+ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ext.h"; sourceTree = "<group>"; };
+		374E35BB24BEC82D00C67531 /* UIView+ext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ext.m"; sourceTree = "<group>"; };
+		374E35BE24BEF5E200C67531 /* SLControlToolView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLControlToolView.h; sourceTree = "<group>"; };
+		374E35BF24BEF5E200C67531 /* SLControlToolView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLControlToolView.m; sourceTree = "<group>"; };
+		375C232C24BD9D5A00F8CC9F /* 扫雷.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "扫雷.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		375C232F24BD9D5A00F8CC9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		375C233024BD9D5A00F8CC9F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		375C233B24BD9D5C00F8CC9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		375C233E24BD9D5C00F8CC9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		375C234024BD9D5C00F8CC9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		375C234124BD9D5C00F8CC9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		375C234824BD9E5100F8CC9F /* SLGamingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLGamingVC.h; sourceTree = "<group>"; };
+		375C234924BD9E5100F8CC9F /* SLGamingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLGamingVC.m; sourceTree = "<group>"; };
+		375C234B24BD9E7D00F8CC9F /* SLPrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLPrefixHeader.h; sourceTree = "<group>"; };
+		375C234E24BDC11C00F8CC9F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		375C235024BDC31A00F8CC9F /* SLGridView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLGridView.h; sourceTree = "<group>"; };
+		375C235124BDC31A00F8CC9F /* SLGridView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLGridView.m; sourceTree = "<group>"; };
+		375C235324BEAED300F8CC9F /* SLGridMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLGridMap.h; sourceTree = "<group>"; };
+		375C235424BEAED300F8CC9F /* SLGridMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLGridMap.m; sourceTree = "<group>"; };
+		375C235624BEB2F900F8CC9F /* SLMarcro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLMarcro.h; sourceTree = "<group>"; };
+		375C235724BEB40200F8CC9F /* SLHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLHeadView.h; sourceTree = "<group>"; };
+		375C235824BEB40200F8CC9F /* SLHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLHeadView.m; sourceTree = "<group>"; };
+		375C235C24BEC0C600F8CC9F /* CHEMMFontImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHEMMFontImage.m; sourceTree = "<group>"; };
+		375C235D24BEC0C600F8CC9F /* UIImage+CHEMMIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CHEMMIconFont.h"; sourceTree = "<group>"; };
+		375C235E24BEC0C600F8CC9F /* CHEMMIconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHEMMIconFont.m; sourceTree = "<group>"; };
+		375C235F24BEC0C600F8CC9F /* CHEMMIconInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHEMMIconInfo.m; sourceTree = "<group>"; };
+		375C236024BEC0C600F8CC9F /* UIImage+CHEMMIconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CHEMMIconFont.m"; sourceTree = "<group>"; };
+		375C236124BEC0C600F8CC9F /* CHEMMFontImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHEMMFontImage.h; sourceTree = "<group>"; };
+		375C236224BEC0C600F8CC9F /* CHEMMIconInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHEMMIconInfo.h; sourceTree = "<group>"; };
+		375C236324BEC0C600F8CC9F /* CHEMMIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHEMMIconFont.h; sourceTree = "<group>"; };
+		375C236824BEC12300F8CC9F /* fonteditor.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fonteditor.ttf; sourceTree = "<group>"; };
+		375C236924BEC12300F8CC9F /* lightconfig.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lightconfig.ttf; sourceTree = "<group>"; };
+		375C236A24BEC12300F8CC9F /* carchatting.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = carchatting.ttf; sourceTree = "<group>"; };
+		375C236B24BEC12400F8CC9F /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
+		375C237424BEC4AD00F8CC9F /* SLGameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLGameConfig.h; sourceTree = "<group>"; };
+		375C237524BEC4AD00F8CC9F /* SLGameConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLGameConfig.m; sourceTree = "<group>"; };
+		3780E12824BF2B5600922F40 /* audio_robot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio_robot.mp3; sourceTree = "<group>"; };
+		3780E12A24BF2B8700922F40 /* SLAudioTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLAudioTool.h; sourceTree = "<group>"; };
+		3780E12B24BF2B8700922F40 /* SLAudioTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLAudioTool.m; sourceTree = "<group>"; };
+		3780E12E24BF2D3C00922F40 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3780E13424BF2EDA00922F40 /* audio_break.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio_break.mp3; sourceTree = "<group>"; };
+		3780E13624BF309200922F40 /* audio_boom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio_boom.mp3; sourceTree = "<group>"; };
+		3780E14524C041F700922F40 /* bgm_01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm_01.mp3; sourceTree = "<group>"; };
+		3780E14724C0421A00922F40 /* bgm_02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm_02.mp3; sourceTree = "<group>"; };
+		3780E14824C0421A00922F40 /* bgm_03.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm_03.mp3; sourceTree = "<group>"; };
+		3780E14B24C052F500922F40 /* SLColorDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLColorDefine.h; sourceTree = "<group>"; };
+		3780E14C24C0656A00922F40 /* SLGameRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLGameRecordView.h; sourceTree = "<group>"; };
+		3780E14D24C0656A00922F40 /* SLGameRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLGameRecordView.m; sourceTree = "<group>"; };
+		3780E15124C06FA600922F40 /* SLRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLRecord.h; sourceTree = "<group>"; };
+		3780E15224C06FA600922F40 /* SLRecord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLRecord.m; sourceTree = "<group>"; };
+		3780E15524C07CC100922F40 /* SLAlertTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLAlertTool.h; sourceTree = "<group>"; };
+		3780E15624C07CC100922F40 /* SLAlertTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLAlertTool.m; sourceTree = "<group>"; };
+		379A15AA24C15F2900913BAD /* audio_flag.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio_flag.mp3; sourceTree = "<group>"; };
+		379A15AC24C161C400913BAD /* audio_breakGrid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio_breakGrid.mp3; sourceTree = "<group>"; };
+		379A15AE24C163AA00913BAD /* audio_breakAround.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio_breakAround.mp3; sourceTree = "<group>"; };
+		379A15B424C1904200913BAD /* SLIndexVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLIndexVC.h; sourceTree = "<group>"; };
+		379A15B524C1904200913BAD /* SLIndexVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLIndexVC.m; sourceTree = "<group>"; };
+		379A15B724C19F0F00913BAD /* audio_cell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio_cell.mp3; sourceTree = "<group>"; };
+		7FF027D2378742E52A84D485 /* Pods-LzzSaolei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LzzSaolei.debug.xcconfig"; path = "Target Support Files/Pods-LzzSaolei/Pods-LzzSaolei.debug.xcconfig"; sourceTree = "<group>"; };
+		99C4731D460F30596012EA05 /* Pods_LzzSaolei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LzzSaolei.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		375C232924BD9D5A00F8CC9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3780E12F24BF2D3C00922F40 /* AVFoundation.framework in Frameworks */,
+				F2EA61E98CFD9D67C67EC39A /* Pods_LzzSaolei.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		375C232324BD9D5A00F8CC9F = {
+			isa = PBXGroup;
+			children = (
+				375C232E24BD9D5A00F8CC9F /* LzzSaolei */,
+				375C232D24BD9D5A00F8CC9F /* Products */,
+				F98EA34B9CD33DE2B7E1A60B /* Pods */,
+				FEE2104ED04C25B3E1F8BB6D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		375C232D24BD9D5A00F8CC9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				375C232C24BD9D5A00F8CC9F /* 扫雷.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		375C232E24BD9D5A00F8CC9F /* LzzSaolei */ = {
+			isa = PBXGroup;
+			children = (
+				375C233B24BD9D5C00F8CC9F /* Assets.xcassets */,
+				375C233D24BD9D5C00F8CC9F /* LaunchScreen.storyboard */,
+				375C234024BD9D5C00F8CC9F /* Info.plist */,
+				375C234124BD9D5C00F8CC9F /* main.m */,
+				375C234E24BDC11C00F8CC9F /* Main.storyboard */,
+				375C232F24BD9D5A00F8CC9F /* AppDelegate.h */,
+				375C233024BD9D5A00F8CC9F /* AppDelegate.m */,
+				3780E12724BF2B4900922F40 /* Audio */,
+				375C237324BEC3D600F8CC9F /* ViewController */,
+				375C237124BEC3AE00F8CC9F /* Classes */,
+				375C237224BEC3C500F8CC9F /* Commom */,
+				375C234C24BD9E8800F8CC9F /* SLTools */,
+			);
+			path = LzzSaolei;
+			sourceTree = "<group>";
+		};
+		375C234C24BD9E8800F8CC9F /* SLTools */ = {
+			isa = PBXGroup;
+			children = (
+				3780E15424C07CA400922F40 /* AlertTool */,
+				3780E15024C06F7F00922F40 /* GameRecord */,
+				375C235B24BEC0C600F8CC9F /* IconFont */,
+				3780E12D24BF2B8A00922F40 /* AudioTool */,
+			);
+			path = SLTools;
+			sourceTree = "<group>";
+		};
+		375C235B24BEC0C600F8CC9F /* IconFont */ = {
+			isa = PBXGroup;
+			children = (
+				375C236C24BEC12D00F8CC9F /* font_source */,
+				375C236324BEC0C600F8CC9F /* CHEMMIconFont.h */,
+				375C235E24BEC0C600F8CC9F /* CHEMMIconFont.m */,
+				375C236124BEC0C600F8CC9F /* CHEMMFontImage.h */,
+				375C235C24BEC0C600F8CC9F /* CHEMMFontImage.m */,
+				375C235D24BEC0C600F8CC9F /* UIImage+CHEMMIconFont.h */,
+				375C236024BEC0C600F8CC9F /* UIImage+CHEMMIconFont.m */,
+				375C236224BEC0C600F8CC9F /* CHEMMIconInfo.h */,
+				375C235F24BEC0C600F8CC9F /* CHEMMIconInfo.m */,
+			);
+			path = IconFont;
+			sourceTree = "<group>";
+		};
+		375C236C24BEC12D00F8CC9F /* font_source */ = {
+			isa = PBXGroup;
+			children = (
+				375C236A24BEC12300F8CC9F /* carchatting.ttf */,
+				375C236824BEC12300F8CC9F /* fonteditor.ttf */,
+				375C236B24BEC12400F8CC9F /* iconfont.ttf */,
+				375C236924BEC12300F8CC9F /* lightconfig.ttf */,
+			);
+			path = font_source;
+			sourceTree = "<group>";
+		};
+		375C237124BEC3AE00F8CC9F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				375C235724BEB40200F8CC9F /* SLHeadView.h */,
+				375C235824BEB40200F8CC9F /* SLHeadView.m */,
+				375C235324BEAED300F8CC9F /* SLGridMap.h */,
+				375C235424BEAED300F8CC9F /* SLGridMap.m */,
+				375C235024BDC31A00F8CC9F /* SLGridView.h */,
+				375C235124BDC31A00F8CC9F /* SLGridView.m */,
+				374E35BE24BEF5E200C67531 /* SLControlToolView.h */,
+				374E35BF24BEF5E200C67531 /* SLControlToolView.m */,
+				3780E14C24C0656A00922F40 /* SLGameRecordView.h */,
+				3780E14D24C0656A00922F40 /* SLGameRecordView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		375C237224BEC3C500F8CC9F /* Commom */ = {
+			isa = PBXGroup;
+			children = (
+				375C235624BEB2F900F8CC9F /* SLMarcro.h */,
+				3780E14B24C052F500922F40 /* SLColorDefine.h */,
+				375C234B24BD9E7D00F8CC9F /* SLPrefixHeader.h */,
+				375C237424BEC4AD00F8CC9F /* SLGameConfig.h */,
+				375C237524BEC4AD00F8CC9F /* SLGameConfig.m */,
+				374E35BA24BEC82D00C67531 /* UIView+ext.h */,
+				374E35BB24BEC82D00C67531 /* UIView+ext.m */,
+			);
+			path = Commom;
+			sourceTree = "<group>";
+		};
+		375C237324BEC3D600F8CC9F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				379A15B424C1904200913BAD /* SLIndexVC.h */,
+				379A15B524C1904200913BAD /* SLIndexVC.m */,
+				375C234824BD9E5100F8CC9F /* SLGamingVC.h */,
+				375C234924BD9E5100F8CC9F /* SLGamingVC.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3780E12724BF2B4900922F40 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				379A15B724C19F0F00913BAD /* audio_cell.mp3 */,
+				379A15AE24C163AA00913BAD /* audio_breakAround.mp3 */,
+				379A15AC24C161C400913BAD /* audio_breakGrid.mp3 */,
+				379A15AA24C15F2900913BAD /* audio_flag.mp3 */,
+				3780E14724C0421A00922F40 /* bgm_02.mp3 */,
+				3780E14824C0421A00922F40 /* bgm_03.mp3 */,
+				3780E14524C041F700922F40 /* bgm_01.mp3 */,
+				3780E13424BF2EDA00922F40 /* audio_break.mp3 */,
+				3780E12824BF2B5600922F40 /* audio_robot.mp3 */,
+				3780E13624BF309200922F40 /* audio_boom.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		3780E12D24BF2B8A00922F40 /* AudioTool */ = {
+			isa = PBXGroup;
+			children = (
+				3780E12A24BF2B8700922F40 /* SLAudioTool.h */,
+				3780E12B24BF2B8700922F40 /* SLAudioTool.m */,
+			);
+			path = AudioTool;
+			sourceTree = "<group>";
+		};
+		3780E15024C06F7F00922F40 /* GameRecord */ = {
+			isa = PBXGroup;
+			children = (
+				3780E15124C06FA600922F40 /* SLRecord.h */,
+				3780E15224C06FA600922F40 /* SLRecord.m */,
+			);
+			path = GameRecord;
+			sourceTree = "<group>";
+		};
+		3780E15424C07CA400922F40 /* AlertTool */ = {
+			isa = PBXGroup;
+			children = (
+				3780E15524C07CC100922F40 /* SLAlertTool.h */,
+				3780E15624C07CC100922F40 /* SLAlertTool.m */,
+			);
+			path = AlertTool;
+			sourceTree = "<group>";
+		};
+		F98EA34B9CD33DE2B7E1A60B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FF027D2378742E52A84D485 /* Pods-LzzSaolei.debug.xcconfig */,
+				2AF94C2A58DCCCCADE2A9E85 /* Pods-LzzSaolei.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FEE2104ED04C25B3E1F8BB6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3780E12E24BF2D3C00922F40 /* AVFoundation.framework */,
+				99C4731D460F30596012EA05 /* Pods_LzzSaolei.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		375C232B24BD9D5A00F8CC9F /* LzzSaolei */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 375C234524BD9D5C00F8CC9F /* Build configuration list for PBXNativeTarget "LzzSaolei" */;
+			buildPhases = (
+				88AB5D499CC7B6EA96D0193F /* [CP] Check Pods Manifest.lock */,
+				375C232824BD9D5A00F8CC9F /* Sources */,
+				375C232924BD9D5A00F8CC9F /* Frameworks */,
+				375C232A24BD9D5A00F8CC9F /* Resources */,
+				342202B13514DF7EBE937B90 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LzzSaolei;
+			productName = LzzSaolei;
+			productReference = 375C232C24BD9D5A00F8CC9F /* 扫雷.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		375C232424BD9D5A00F8CC9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Chemm;
+				TargetAttributes = {
+					375C232B24BD9D5A00F8CC9F = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 375C232724BD9D5A00F8CC9F /* Build configuration list for PBXProject "LzzSaolei" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 375C232324BD9D5A00F8CC9F;
+			productRefGroup = 375C232D24BD9D5A00F8CC9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				375C232B24BD9D5A00F8CC9F /* LzzSaolei */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		375C232A24BD9D5A00F8CC9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3780E14A24C0421A00922F40 /* bgm_03.mp3 in Resources */,
+				3780E13724BF309200922F40 /* audio_boom.mp3 in Resources */,
+				379A15AF24C163AA00913BAD /* audio_breakAround.mp3 in Resources */,
+				379A15AD24C161C400913BAD /* audio_breakGrid.mp3 in Resources */,
+				375C236D24BEC1C300F8CC9F /* carchatting.ttf in Resources */,
+				375C236E24BEC1C300F8CC9F /* fonteditor.ttf in Resources */,
+				375C236F24BEC1C300F8CC9F /* iconfont.ttf in Resources */,
+				3780E13524BF2EDA00922F40 /* audio_break.mp3 in Resources */,
+				375C237024BEC1C300F8CC9F /* lightconfig.ttf in Resources */,
+				3780E12924BF2B5600922F40 /* audio_robot.mp3 in Resources */,
+				375C234F24BDC11C00F8CC9F /* Main.storyboard in Resources */,
+				379A15AB24C15F2900913BAD /* audio_flag.mp3 in Resources */,
+				3780E14924C0421A00922F40 /* bgm_02.mp3 in Resources */,
+				379A15B824C19F0F00913BAD /* audio_cell.mp3 in Resources */,
+				375C233F24BD9D5C00F8CC9F /* LaunchScreen.storyboard in Resources */,
+				3780E14624C041F700922F40 /* bgm_01.mp3 in Resources */,
+				375C233C24BD9D5C00F8CC9F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		342202B13514DF7EBE937B90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LzzSaolei/Pods-LzzSaolei-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LzzSaolei/Pods-LzzSaolei-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LzzSaolei/Pods-LzzSaolei-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88AB5D499CC7B6EA96D0193F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LzzSaolei-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		375C232824BD9D5A00F8CC9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				375C237624BEC4AD00F8CC9F /* SLGameConfig.m in Sources */,
+				3780E14E24C0656A00922F40 /* SLGameRecordView.m in Sources */,
+				375C233124BD9D5A00F8CC9F /* AppDelegate.m in Sources */,
+				3780E15324C06FA600922F40 /* SLRecord.m in Sources */,
+				379A15B624C1904200913BAD /* SLIndexVC.m in Sources */,
+				375C234224BD9D5C00F8CC9F /* main.m in Sources */,
+				375C235924BEB40200F8CC9F /* SLHeadView.m in Sources */,
+				375C234A24BD9E5100F8CC9F /* SLGamingVC.m in Sources */,
+				3780E12C24BF2B8700922F40 /* SLAudioTool.m in Sources */,
+				375C236624BEC0C600F8CC9F /* CHEMMIconInfo.m in Sources */,
+				3780E15724C07CC100922F40 /* SLAlertTool.m in Sources */,
+				375C235224BDC31A00F8CC9F /* SLGridView.m in Sources */,
+				375C235524BEAED300F8CC9F /* SLGridMap.m in Sources */,
+				374E35C024BEF5E200C67531 /* SLControlToolView.m in Sources */,
+				374E35BC24BEC82D00C67531 /* UIView+ext.m in Sources */,
+				375C236424BEC0C600F8CC9F /* CHEMMFontImage.m in Sources */,
+				375C236724BEC0C600F8CC9F /* UIImage+CHEMMIconFont.m in Sources */,
+				375C236524BEC0C600F8CC9F /* CHEMMIconFont.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		375C233D24BD9D5C00F8CC9F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				375C233E24BD9D5C00F8CC9F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		375C234324BD9D5C00F8CC9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		375C234424BD9D5C00F8CC9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		375C234624BD9D5C00F8CC9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FF027D2378742E52A84D485 /* Pods-LzzSaolei.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = C44V3Y48A9;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LzzSaolei/Commom/SLPrefixHeader.h";
+				INFOPLIST_FILE = LzzSaolei/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chemm.professor;
+				PRODUCT_NAME = "扫雷";
+				PROVISIONING_PROFILE_SPECIFIER = professor_pp_dev;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		375C234724BD9D5C00F8CC9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AF94C2A58DCCCCADE2A9E85 /* Pods-LzzSaolei.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = C44V3Y48A9;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LzzSaolei/Commom/SLPrefixHeader.h";
+				INFOPLIST_FILE = LzzSaolei/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chemm.professor;
+				PRODUCT_NAME = "扫雷";
+				PROVISIONING_PROFILE_SPECIFIER = professor_pp_dis_adhot;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		375C232724BD9D5A00F8CC9F /* Build configuration list for PBXProject "LzzSaolei" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				375C234324BD9D5C00F8CC9F /* Debug */,
+				375C234424BD9D5C00F8CC9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		375C234524BD9D5C00F8CC9F /* Build configuration list for PBXNativeTarget "LzzSaolei" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				375C234624BD9D5C00F8CC9F /* Debug */,
+				375C234724BD9D5C00F8CC9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 375C232424BD9D5A00F8CC9F /* Project object */;
+}
