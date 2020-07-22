@@ -27,7 +27,7 @@
 @end
 
 @interface SLGridView()
-@property(nonatomic,strong)UIButton * actionBtn;
+
 @property(nonatomic,strong)UILabel * label;
 @property(nonatomic,strong)UIView * maskShall;
 @property(nonatomic,strong)NSDictionary * colorWithNumber;
@@ -56,14 +56,6 @@
     if (self = [super init]) {
         self.gridPosition = gridPosition;
         self.status = SLGridStatusDefault;
-        
-        self.actionBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        
-        [self.actionBtn addTarget:self action:@selector(btnTouchOne:forEvent:) forControlEvents:UIControlEventTouchDown];
-           
-        [self.actionBtn addTarget:self action:@selector(buttonRepeatAction:) forControlEvents:UIControlEventTouchDownRepeat];
-        
-        [self addSubview:self.actionBtn];
         self.hasBoom = NO;
         
     }
@@ -78,7 +70,7 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    self.actionBtn.frame = self.bounds;
+//    self.actionBtn.frame = self.bounds;
     self.boomImageView.frame = self.bounds;
     self.label.frame = self.bounds;
     self.maskShall.frame = self.bounds;
@@ -93,15 +85,26 @@
     self.backgroundColor = ((gridPosition.x + gridPosition.y)%2 == 0)?SLColorGridBackgroundDark:SLColorGridBackgroundLight;
 }
 
-
-
-// 单击操作
-- (void)btnTouchOne:(UIButton *)sender forEvent:(UIEvent *)event
+// 单击和双击的处理
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    [self performSelector:@selector(showControlToolView:) withObject:sender afterDelay:0.1];
+    if ([SLGameConfig sharedInstance].userInternactionalForGame == NO) {
+        [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(showControlToolView) object:nil];
+        [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(buttonRepeatAction) object:nil];
+        return;
+    }
+    UITouch * touch = [touches anyObject];
+    NSTimeInterval delay =0.1;
+    if (touch.tapCount == 1) {
+        [self performSelector:@selector(showControlToolView) withObject:nil afterDelay:delay];
+    }else if (touch.tapCount == 2){
+        [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(showControlToolView) object:nil];
+        [self performSelector:@selector(buttonRepeatAction) withObject:nil afterDelay:delay];
+    }
 }
 
--(void)showControlToolView:(id)sender
+// 单击操作
+-(void)showControlToolView
 {
     if (self.status == SLGridStatusDefault || self.status == SLGridStatusFlag) {
         self.targetMap.toolView.sourceGrid = self;
@@ -123,11 +126,8 @@
 }
 
 // 双击操作
-- (void)buttonRepeatAction:(UIButton *)sender
+- (void)buttonRepeatAction
 {
-    
-    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(showControlToolView:) object:sender];
-    
     if (self.status == SLGridStatusDefault) {
         self.targetMap.toolView.hidden = YES;
         [self openGrid];

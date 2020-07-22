@@ -22,7 +22,6 @@ SLSingletonH(SLGameConfig)
 
 -(void)startGame;
 
-
 -(void)endGame;
 
 -(void)resetGameTime;

@@ -20,9 +20,11 @@
 
 @property(nonatomic,strong)QMUIPopupMenuView * menu;
 
-@property(nonatomic,strong)UIButton * soundBtn;
+//@property(nonatomic,strong)UIButton * soundBtn;
 
 @property(nonatomic,strong)SLGameRecordView * recordView;
+
+@property(nonatomic,strong)UIButton * settingBtn;
 
 @end
 
@@ -50,18 +52,23 @@
         self.timeLabel = [[UIButton alloc] init];
         [self.timeLabel addTarget:self action:@selector(timeLabelClickAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.timeLabel];
+        self.timeLabel.expandHitFloat = 10;
         
         [self updateLevelTitle];
         
         
-        self.soundBtn = [[UIButton alloc] init];
-        [self.soundBtn setAttributedTitle:[[NSAttributedString alloc] initWithString:@"\U0000e605" attributes:@{NSFontAttributeName:[CHEMMIconFont fontWithCarChatting:20],NSForegroundColorAttributeName:SLColorNavigationBarTin}] forState:UIControlStateNormal];
-        [self.soundBtn setAttributedTitle:[[NSAttributedString alloc] initWithString:@"\U0000e604" attributes:@{NSFontAttributeName:[CHEMMIconFont fontWithCarChatting:20],NSForegroundColorAttributeName:SLColorNavigationBarTin}] forState:UIControlStateSelected];
-        [self.soundBtn addTarget:self action:@selector(soundBtnClickAction:) forControlEvents:UIControlEventTouchUpInside];
+//        self.soundBtn = [[UIButton alloc] init];
+//        [self.soundBtn setAttributedTitle:[[NSAttributedString alloc] initWithString:@"\U0000e605" attributes:@{NSFontAttributeName:[CHEMMIconFont fontWithCarChatting:20],NSForegroundColorAttributeName:SLColorNavigationBarTin}] forState:UIControlStateNormal];
+//        [self.soundBtn setAttributedTitle:[[NSAttributedString alloc] initWithString:@"\U0000e604" attributes:@{NSFontAttributeName:[CHEMMIconFont fontWithCarChatting:20],NSForegroundColorAttributeName:SLColorNavigationBarTin}] forState:UIControlStateSelected];
+//        [self.soundBtn addTarget:self action:@selector(soundBtnClickAction:) forControlEvents:UIControlEventTouchUpInside];
+//        self.soundBtn.selected = ![SLGameConfig sharedInstance].openSound;
+//        [self addSubview:self.soundBtn];
         
-        self.soundBtn.selected = ![SLGameConfig sharedInstance].openSound;
-        
-        [self addSubview:self.soundBtn];
+        self.settingBtn = [[UIButton alloc] init];
+        [self.settingBtn setAttributedTitle:[[NSAttributedString alloc] initWithString:@"\U0000e782" attributes:@{NSFontAttributeName:[CHEMMIconFont fontWithCarChatting:20],NSForegroundColorAttributeName:SLColorNavigationBarTin}] forState:UIControlStateNormal];
+        [self.settingBtn addTarget:self action:@selector(soundBtnClickAction:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:self.settingBtn];
+        self.settingBtn.expandHitFloat = 10;
         
         [[SLGameConfig sharedInstance] addObserver:self forKeyPath:@"openSound" options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew context:nil];
         
@@ -91,7 +98,7 @@
 {
     if ([keyPath isEqualToString:@"openSound"]) {
         BOOL value = [[change objectForKey:NSKeyValueChangeNewKey] boolValue];
-        self.soundBtn.selected = !value;
+//        self.soundBtn.selected = !value;
     }
     
     if ([keyPath isEqualToString:@"gameTime"]) {
@@ -146,7 +153,9 @@
     
     CGFloat soundBtn_w = contentHeight * 3/4;
     
-    self.soundBtn.frame = CGRectMake(self.qmui_width - 15 - soundBtn_w, StatusBarHeight + (contentHeight - soundBtn_w)/2, soundBtn_w, soundBtn_w);
+//    self.soundBtn.frame = CGRectMake(self.qmui_width - 15 - soundBtn_w, StatusBarHeight + (contentHeight - soundBtn_w)/2, soundBtn_w, soundBtn_w);
+    self.settingBtn.frame = CGRectMake(self.qmui_width - 15 - soundBtn_w, StatusBarHeight + (contentHeight - soundBtn_w)/2, soundBtn_w, soundBtn_w);
+    
     
     CGFloat lineWidth = 0.5;
     self.bottomLine.frame = CGRectMake(0, self.qmui_height - lineWidth, self.qmui_width, lineWidth);

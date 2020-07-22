@@ -172,8 +172,9 @@
 // 布雷
 -(void)releaseBoomIfNeedByFirstClick:(SLGridView *)firstClickGrid;
 {
-    [SLGameConfig sharedInstance].userInternactionalForGame = NO;
+    
     if (self.hasReleaseBoom == NO) {
+        [SLGameConfig sharedInstance].userInternactionalForGame = NO;
         NSLog(@"开始布雷");
         
         // 雷数
@@ -208,8 +209,9 @@
         self.hasReleaseBoom = YES;
         NSLog(@"布雷完成");
         [[SLGameConfig sharedInstance] startGame];
+        [SLGameConfig sharedInstance].userInternactionalForGame = YES;
     }
-    [SLGameConfig sharedInstance].userInternactionalForGame = YES;
+    
 }
 
 

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		370B734C24C545E5007F7520 /* SLGameAboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 370B734B24C545E5007F7520 /* SLGameAboutVC.m */; };
+		370B734F24C5AA2C007F7520 /* UIButton+ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 370B734E24C5AA2C007F7520 /* UIButton+ext.m */; };
+		370B735224C5AB93007F7520 /* SLSettingBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 370B735124C5AB93007F7520 /* SLSettingBoardView.m */; };
 		374E35BC24BEC82D00C67531 /* UIView+ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 374E35BB24BEC82D00C67531 /* UIView+ext.m */; };
 		374E35C024BEF5E200C67531 /* SLControlToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 374E35BF24BEF5E200C67531 /* SLControlToolView.m */; };
 		375C233124BD9D5A00F8CC9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 375C233024BD9D5A00F8CC9F /* AppDelegate.m */; };
@@ -48,6 +51,12 @@
 
 /* Begin PBXFileReference section */
 		2AF94C2A58DCCCCADE2A9E85 /* Pods-LzzSaolei.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LzzSaolei.release.xcconfig"; path = "Target Support Files/Pods-LzzSaolei/Pods-LzzSaolei.release.xcconfig"; sourceTree = "<group>"; };
+		370B734A24C545E5007F7520 /* SLGameAboutVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLGameAboutVC.h; sourceTree = "<group>"; };
+		370B734B24C545E5007F7520 /* SLGameAboutVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLGameAboutVC.m; sourceTree = "<group>"; };
+		370B734D24C5AA2C007F7520 /* UIButton+ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ext.h"; sourceTree = "<group>"; };
+		370B734E24C5AA2C007F7520 /* UIButton+ext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ext.m"; sourceTree = "<group>"; };
+		370B735024C5AB93007F7520 /* SLSettingBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLSettingBoardView.h; sourceTree = "<group>"; };
+		370B735124C5AB93007F7520 /* SLSettingBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLSettingBoardView.m; sourceTree = "<group>"; };
 		374E35BA24BEC82D00C67531 /* UIView+ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ext.h"; sourceTree = "<group>"; };
 		374E35BB24BEC82D00C67531 /* UIView+ext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ext.m"; sourceTree = "<group>"; };
 		374E35BE24BEF5E200C67531 /* SLControlToolView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLControlToolView.h; sourceTree = "<group>"; };
@@ -211,6 +220,8 @@
 				374E35BF24BEF5E200C67531 /* SLControlToolView.m */,
 				3780E14C24C0656A00922F40 /* SLGameRecordView.h */,
 				3780E14D24C0656A00922F40 /* SLGameRecordView.m */,
+				370B735024C5AB93007F7520 /* SLSettingBoardView.h */,
+				370B735124C5AB93007F7520 /* SLSettingBoardView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -225,6 +236,8 @@
 				375C237524BEC4AD00F8CC9F /* SLGameConfig.m */,
 				374E35BA24BEC82D00C67531 /* UIView+ext.h */,
 				374E35BB24BEC82D00C67531 /* UIView+ext.m */,
+				370B734D24C5AA2C007F7520 /* UIButton+ext.h */,
+				370B734E24C5AA2C007F7520 /* UIButton+ext.m */,
 			);
 			path = Commom;
 			sourceTree = "<group>";
@@ -236,6 +249,8 @@
 				379A15B524C1904200913BAD /* SLIndexVC.m */,
 				375C234824BD9E5100F8CC9F /* SLGamingVC.h */,
 				375C234924BD9E5100F8CC9F /* SLGamingVC.m */,
+				370B734A24C545E5007F7520 /* SLGameAboutVC.h */,
+				370B734B24C545E5007F7520 /* SLGameAboutVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -432,6 +447,7 @@
 			files = (
 				375C237624BEC4AD00F8CC9F /* SLGameConfig.m in Sources */,
 				3780E14E24C0656A00922F40 /* SLGameRecordView.m in Sources */,
+				370B735224C5AB93007F7520 /* SLSettingBoardView.m in Sources */,
 				375C233124BD9D5A00F8CC9F /* AppDelegate.m in Sources */,
 				3780E15324C06FA600922F40 /* SLRecord.m in Sources */,
 				379A15B624C1904200913BAD /* SLIndexVC.m in Sources */,
@@ -445,9 +461,11 @@
 				375C235524BEAED300F8CC9F /* SLGridMap.m in Sources */,
 				374E35C024BEF5E200C67531 /* SLControlToolView.m in Sources */,
 				374E35BC24BEC82D00C67531 /* UIView+ext.m in Sources */,
+				370B734F24C5AA2C007F7520 /* UIButton+ext.m in Sources */,
 				375C236424BEC0C600F8CC9F /* CHEMMFontImage.m in Sources */,
 				375C236724BEC0C600F8CC9F /* UIImage+CHEMMIconFont.m in Sources */,
 				375C236524BEC0C600F8CC9F /* CHEMMIconFont.m in Sources */,
+				370B734C24C545E5007F7520 /* SLGameAboutVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
